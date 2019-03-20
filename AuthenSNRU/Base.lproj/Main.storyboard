@@ -125,6 +125,19 @@
                     <view key="view" contentMode="scaleToFill" id="Xtg-yI-l6o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vOu-FO-oOy">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89023816590000004" green="0.56898409130000005" blue="0.56077098849999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem title="Register" id="rCq-hD-HCf">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" image="ArrowBack" id="dfp-r0-238"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="aMv-m6-kdN"/>
                     </view>
@@ -135,6 +148,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ArrowBack" width="108" height="108"/>
         <image name="Logo" width="170.66667175292969" height="170.66667175292969"/>
         <image name="Wallpaper" width="191.66667175292969" height="341.33334350585938"/>
     </resources>
