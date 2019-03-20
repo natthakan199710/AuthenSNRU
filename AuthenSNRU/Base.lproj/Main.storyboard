@@ -74,6 +74,9 @@
                                     <color key="titleColor" red="0.89023816590000004" green="0.56898409130000005" blue="0.56077098849999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ke4-WC-YhY"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HP3-Ch-H4p">
                                 <rect key="frame" x="72" y="452" width="270" height="30"/>
@@ -107,10 +110,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="ZEZ-kD-bW5" kind="show" identifier="GoRegisterxb" id="Aiy-q7-Icp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2043" y="-126"/>
+            <point key="canvasLocation" x="-1809" y="-127"/>
         </scene>
         <!--Register-->
         <scene sceneID="gjO-34-vqD">
@@ -125,7 +131,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K29-yU-Hym" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1141" y="-127"/>
+            <point key="canvasLocation" x="-891" y="-127"/>
         </scene>
     </scenes>
     <resources>
