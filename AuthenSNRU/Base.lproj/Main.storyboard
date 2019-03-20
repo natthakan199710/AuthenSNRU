@@ -127,7 +127,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vOu-FO-oOy">
-                                <rect key="frame" x="0.0" y="44" width="0.0" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <color key="backgroundColor" red="0.89023816590000004" green="0.56898409130000005" blue="0.56077098849999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
@@ -137,7 +137,11 @@
                                                 <action selector="backButton:" destination="ZEZ-kD-bW5" id="lEY-aO-Gsp"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Item" image="CloudUpload" id="pWg-Nb-bKh"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="CloudUpload" id="pWg-Nb-bKh">
+                                            <connections>
+                                                <action selector="cloudButton:" destination="ZEZ-kD-bW5" id="njI-dP-Jky"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
