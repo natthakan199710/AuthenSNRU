@@ -111,7 +111,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="ZEZ-kD-bW5" kind="show" identifier="GoRegisterxb" id="Aiy-q7-Icp"/>
+                        <segue destination="ZEZ-kD-bW5" kind="show" identifier="GoRegister" id="Aiy-q7-Icp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
