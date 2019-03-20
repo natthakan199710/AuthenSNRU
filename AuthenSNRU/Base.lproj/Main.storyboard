@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -29,7 +29,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authen SNRU" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ir-sA-1tB">
-                                <rect key="frame" x="110.66666666666667" y="326" width="192.66666666666663" height="36"/>
+                                <rect key="frame" x="111" y="326" width="192.5" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="191" id="22J-II-eQo"/>
                                     <constraint firstAttribute="height" constant="36" id="cYO-Mu-Iwe"/>
@@ -126,9 +126,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vOu-FO-oOy">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vOu-FO-oOy">
+                                <rect key="frame" x="0.0" y="44" width="0.0" height="44"/>
                                 <color key="backgroundColor" red="0.89023816590000004" green="0.56898409130000005" blue="0.56077098849999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
@@ -138,11 +137,63 @@
                                                 <action selector="backButton:" destination="ZEZ-kD-bW5" id="lEY-aO-Gsp"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="CloudUpload" id="pWg-Nb-bKh"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="EKy-Y7-ZQA">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QsD-RD-GOT">
+                                <rect key="frame" x="92" y="133" width="230" height="30"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BUP-kj-ROi"/>
+                                    <constraint firstAttribute="width" constant="230" id="Zwb-mY-kXv"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oy9-ns-rcG">
+                                <rect key="frame" x="92" y="171" width="230" height="30"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="XVg-h5-7E3"/>
+                                    <constraint firstAttribute="height" constant="30" id="ovV-dg-p4p"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passwoed:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LiO-wk-6N6">
+                                <rect key="frame" x="92" y="209" width="230" height="30"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="Fal-dN-9td"/>
+                                    <constraint firstAttribute="height" constant="30" id="Oxa-uf-x9u"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LiO-wk-6N6" firstAttribute="centerX" secondItem="Xtg-yI-l6o" secondAttribute="centerX" id="066-1i-yXG"/>
+                            <constraint firstItem="vOu-FO-oOy" firstAttribute="top" secondItem="aMv-m6-kdN" secondAttribute="top" id="0uX-gk-bj4"/>
+                            <constraint firstItem="vOu-FO-oOy" firstAttribute="leading" secondItem="aMv-m6-kdN" secondAttribute="leading" id="3Kb-d9-S8P"/>
+                            <constraint firstItem="LiO-wk-6N6" firstAttribute="top" secondItem="oy9-ns-rcG" secondAttribute="bottom" constant="8" id="GNh-IO-7ep"/>
+                            <constraint firstItem="oy9-ns-rcG" firstAttribute="centerX" secondItem="Xtg-yI-l6o" secondAttribute="centerX" id="GeS-8M-0IY"/>
+                            <constraint firstItem="EKy-Y7-ZQA" firstAttribute="leading" secondItem="aMv-m6-kdN" secondAttribute="leading" id="UKy-xt-SLr"/>
+                            <constraint firstItem="QsD-RD-GOT" firstAttribute="top" secondItem="vOu-FO-oOy" secondAttribute="bottom" constant="45" id="WHw-Hs-5qF"/>
+                            <constraint firstItem="EKy-Y7-ZQA" firstAttribute="trailing" secondItem="aMv-m6-kdN" secondAttribute="trailing" id="dKg-WT-cGQ"/>
+                            <constraint firstItem="EKy-Y7-ZQA" firstAttribute="top" secondItem="vOu-FO-oOy" secondAttribute="bottom" id="e5B-yx-uet"/>
+                            <constraint firstItem="QsD-RD-GOT" firstAttribute="centerX" secondItem="Xtg-yI-l6o" secondAttribute="centerX" id="qqQ-Ey-QuW"/>
+                            <constraint firstItem="oy9-ns-rcG" firstAttribute="top" secondItem="QsD-RD-GOT" secondAttribute="bottom" constant="8" id="rBh-1m-hIg"/>
+                            <constraint firstItem="EKy-Y7-ZQA" firstAttribute="bottom" secondItem="aMv-m6-kdN" secondAttribute="bottom" id="yDM-HL-Osi"/>
+                            <constraint firstItem="vOu-FO-oOy" firstAttribute="trailing" secondItem="aMv-m6-kdN" secondAttribute="trailing" id="zxy-St-zg6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aMv-m6-kdN"/>
                     </view>
                     <connections>
@@ -151,12 +202,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K29-yU-Hym" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-891" y="-127"/>
+            <point key="canvasLocation" x="-891.304347826087" y="-127.23214285714285"/>
         </scene>
     </scenes>
     <resources>
-        <image name="ArrowBack" width="108" height="108"/>
-        <image name="Logo" width="170.66667175292969" height="170.66667175292969"/>
-        <image name="Wallpaper" width="191.66667175292969" height="341.33334350585938"/>
+        <image name="ArrowBack" width="72" height="72"/>
+        <image name="CloudUpload" width="72" height="72"/>
+        <image name="Logo" width="170.5" height="170.5"/>
+        <image name="Wallpaper" width="191.5" height="341"/>
     </resources>
 </document>
