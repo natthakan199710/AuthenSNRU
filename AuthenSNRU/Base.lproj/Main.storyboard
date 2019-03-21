@@ -126,8 +126,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vOu-FO-oOy">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vOu-FO-oOy">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89023816590000004" green="0.56898409130000005" blue="0.56077098849999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
@@ -139,65 +140,42 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Item" image="CloudUpload" id="pWg-Nb-bKh">
                                             <connections>
-                                                <action selector="cloudButton:" destination="ZEZ-kD-bW5" id="njI-dP-Jky"/>
+                                                <action selector="uploadButton:" destination="ZEZ-kD-bW5" id="DYu-bd-TzC"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="EKy-Y7-ZQA">
+                            <imageView userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="EKy-Y7-ZQA">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QsD-RD-GOT">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QsD-RD-GOT">
                                 <rect key="frame" x="92" y="133" width="230" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="BUP-kj-ROi"/>
-                                    <constraint firstAttribute="width" constant="230" id="Zwb-mY-kXv"/>
-                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oy9-ns-rcG">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oy9-ns-rcG">
                                 <rect key="frame" x="92" y="171" width="230" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="230" id="XVg-h5-7E3"/>
-                                    <constraint firstAttribute="height" constant="30" id="ovV-dg-p4p"/>
-                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passwoed:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LiO-wk-6N6">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passwoed:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LiO-wk-6N6">
                                 <rect key="frame" x="92" y="209" width="230" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="230" id="Fal-dN-9td"/>
-                                    <constraint firstAttribute="height" constant="30" id="Oxa-uf-x9u"/>
-                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="LiO-wk-6N6" firstAttribute="centerX" secondItem="Xtg-yI-l6o" secondAttribute="centerX" id="066-1i-yXG"/>
-                            <constraint firstItem="vOu-FO-oOy" firstAttribute="top" secondItem="aMv-m6-kdN" secondAttribute="top" id="0uX-gk-bj4"/>
-                            <constraint firstItem="vOu-FO-oOy" firstAttribute="leading" secondItem="aMv-m6-kdN" secondAttribute="leading" id="3Kb-d9-S8P"/>
-                            <constraint firstItem="LiO-wk-6N6" firstAttribute="top" secondItem="oy9-ns-rcG" secondAttribute="bottom" constant="8" id="GNh-IO-7ep"/>
-                            <constraint firstItem="oy9-ns-rcG" firstAttribute="centerX" secondItem="Xtg-yI-l6o" secondAttribute="centerX" id="GeS-8M-0IY"/>
-                            <constraint firstItem="EKy-Y7-ZQA" firstAttribute="leading" secondItem="aMv-m6-kdN" secondAttribute="leading" id="UKy-xt-SLr"/>
-                            <constraint firstItem="QsD-RD-GOT" firstAttribute="top" secondItem="vOu-FO-oOy" secondAttribute="bottom" constant="45" id="WHw-Hs-5qF"/>
-                            <constraint firstItem="EKy-Y7-ZQA" firstAttribute="trailing" secondItem="aMv-m6-kdN" secondAttribute="trailing" id="dKg-WT-cGQ"/>
-                            <constraint firstItem="EKy-Y7-ZQA" firstAttribute="top" secondItem="vOu-FO-oOy" secondAttribute="bottom" id="e5B-yx-uet"/>
-                            <constraint firstItem="QsD-RD-GOT" firstAttribute="centerX" secondItem="Xtg-yI-l6o" secondAttribute="centerX" id="qqQ-Ey-QuW"/>
-                            <constraint firstItem="oy9-ns-rcG" firstAttribute="top" secondItem="QsD-RD-GOT" secondAttribute="bottom" constant="8" id="rBh-1m-hIg"/>
-                            <constraint firstItem="EKy-Y7-ZQA" firstAttribute="bottom" secondItem="aMv-m6-kdN" secondAttribute="bottom" id="yDM-HL-Osi"/>
-                            <constraint firstItem="vOu-FO-oOy" firstAttribute="trailing" secondItem="aMv-m6-kdN" secondAttribute="trailing" id="zxy-St-zg6"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aMv-m6-kdN"/>
                     </view>
                     <connections>
