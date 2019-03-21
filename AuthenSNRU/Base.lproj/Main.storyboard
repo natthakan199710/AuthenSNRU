@@ -166,7 +166,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passwoed:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LiO-wk-6N6">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LiO-wk-6N6">
                                 <rect key="frame" x="92" y="209" width="230" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -179,6 +179,9 @@
                         <viewLayoutGuide key="safeArea" id="aMv-m6-kdN"/>
                     </view>
                     <connections>
+                        <outlet property="nameTextField" destination="QsD-RD-GOT" id="xFv-uc-bpT"/>
+                        <outlet property="passwordTextField" destination="LiO-wk-6N6" id="b3D-cr-InC"/>
+                        <outlet property="userTextField" destination="oy9-ns-rcG" id="epO-MO-ovR"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="BackMain" id="LZ6-bP-JoQ"/>
                     </connections>
                 </viewController>
